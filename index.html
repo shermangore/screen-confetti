@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        .screen {
+            position: fixed;
+            max-width: 10px;
+            max-height: 10px;
+            min-width: 10px;
+            min-height: 10px;
+            height: 10px;
+            width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen1" class="screen"></div>
+    <div id="screen2" class="screen"></div>
+    <div id="screen3" class="screen"></div>
+    <div id="screen4" class="screen"></div>
+    <div id="screen5" class="screen"></div>
+    <div id="screen6" class="screen"></div>
+    <div id="screen7" class="screen"></div>
+    <div id="screen8" class="screen"></div>
+    <div id="screen9" class="screen"></div>
+    <div id="screen10" class="screen"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){setInterval(function(){$(".screen").each(function(idx){$(`#screen${idx}`).css("background-color",`rgba(${Math.floor(Math.random()*(255-0))},${Math.floor(Math.random()*(255-0))},${Math.floor(Math.random()*(255-0))},1)`).css("top",(0+Math.floor(Math.random()*($(document).height()-0)+1))).css("left",(0+Math.floor(Math.random()*($(document).width()-0)+1)));})},100);});
+</script>
+</html>
