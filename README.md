@@ -1,6 +1,9 @@
 # screen-confetti
 Uses a single line of JavaScript to display confetti on your screen.
 
+### Demo
+[demo](https://shermangore.github.io/screen-confetti/)
+
 ### Details
 The confetti is generated using random number generators for the color and location of each piece of confetti.  
 Ten separate div tags are used as the individual pieces of the confetti and are sized at 10px X 10px.
